@@ -2,13 +2,14 @@
 <html>
   <head>
     <title>My Times</title>
+    <link href="./resources/css/style.css" type="text/css" rel="stylesheet">
   </head>
   <body>
     <div class="header">
-      <img src="./resources/image/img-myt-logo.jpg">
-      <h6>My Times</h6>
+      <img id="logo" src="./resources/image/img-myt-logo.jpg">
+      <h4 id=logo1>My Times</h4>
       <nav>
-        <ul>
+        <ul class="headnav">
           <li><a href="#">World</a></li>
           <li><a href="#">U.S.</a></li>
           <li><a href="#">Tech</a></li>
@@ -19,7 +20,9 @@
 
     <div class="main">
       <div class="column1">
-        <p>Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."</p>
+        <div class="img1">
+          <p class="imgcontentmain">Mother of Three Buys Tuna Steak at Phish Concert. Leaves, "Feeling Funny."</p>
+        </div>
         <p>MONUMENT VALLEY, AZ - Lorem ipsum dolor sit amet, consectetur adipiscing elit.
           Pellentesque nec nisl at augue dapibus dignissim. Nunc condimentum rutrum metus,
            ac eleifend lacus viverra nec. Proin ultrices egestas diam sed mollis. Nulla
@@ -30,14 +33,24 @@
            lobortis arcu ex id odio. Nam fermentum nulla et eros bibendum, sed ullamcorper
            massa scelerisque. Vestibulum aliquet placerat leo a hendrerit. Nulla non sagittis
            neque. Nullam sit amet fringilla massa.</p>
-        <h2>Orca Spends Vacation at Land World Puget</h2>
-        <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices
-           purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
-        <p>Earth Spins Backwards for 2017</p>
-        <h2>Burger for Breakfast: How Early is too Early?</h2>
-        <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus.
-          Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
-        <p>Research Shows Cameras Erase Memory</p>
+           <div class="stories">
+             <div calss="story1">
+               <h2>Orca Spends Vacation at Land World Puget</h2>
+               <p>PUGET, SO - Sed felis elit, faucibus et ipsum vel, vehicula ultrices
+                 purus. Sed congue odio vitae malesuada rhoncus. Integer vitae nisi pulvinar ante accumsan...</p>
+                 <div class="img2">
+                   <p class="imgcontent">Earth Spins Backwards for 2017</p>
+                 </div>
+             </div>
+            <div class="story2">
+              <h2>Burger for Breakfast: How Early is too Early?</h2>
+              <p>Mew York, MY—Interdum et malesuada fames ac ante ipsum primis in faucibus.
+              Pellentesque id quam facilisis, ultrices ante ut, rutrum enim. Praesent eu nisl erat.</p>
+              <div class="img3">
+                <p class="imgcontent">Research Shows Cameras Erase Memory</p>
+              </div>
+            </div>
+          </div>
       </div>
       <div class="column2">
         <h2>FBI Finds Action Star Guilty of False Advertising</h2>
@@ -49,7 +62,9 @@
            pharetra urna fringilla vitae. Morbi eget rutrum urna. Cras
            condimentum augue ut ante sollicitudin interdum. Pellentesque cursus
            dolor at tincidunt cursus. Vestibulum blandit aliquam felis...</p>
-        <p>Cats in Control-Is It a Thing?</p>
+      <div class="img4">
+        <p class="imgcontent">Cats in Control-Is It a Thing?</p>
+      </div>
         <p>BROOKLYN, NY- In molestie nulla sodales sit amet.
           Proin vulputate, ipsum porta aliquam commodo, nunc nibh tincidunt
           lorem, vel consectetur neque mi vel neque. Mauris ultricies, nulla
@@ -59,10 +74,15 @@
       </div>
       <div class="column3">
         <img src="./resources/image/img-news-bite.png">
-        <h2>NEWS BITES</h2>
-        <p>Cat Emoji Goes Viral Buy Youtube Views Home Business Advertising
-          Ideas Advertising Internet Online Illustration in Marketing
-          Materials Finally a Top Secret Way You Can</p>
+        <h2 class="nbheading">NEWS BITES</h2>
+        <ul class="nblist">
+          <li>Cat Emoji Goes Viral</li>
+          <li>Buy Youtube Views</li>
+          <li>Home Business Advertising Ideas</li>
+          <li>Advertising Internet Online</li>
+          <li>Illustration in Marketing Materials</li>
+          <li>Finally a Top Secret Way You Can</li>
+        </ul>
       </div>
     </div>
 
